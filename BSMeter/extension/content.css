@@ -1,0 +1,128 @@
+/* BS Meter injected UI */
+#bs-meter-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2147483646;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#bs-meter-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #eb4034;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(235, 64, 52, 0.45);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#bs-meter-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(235, 64, 52, 0.5);
+}
+
+#bs-meter-panel {
+  position: fixed;
+  bottom: 80px;
+  right: 24px;
+  width: 320px;
+  max-width: calc(100vw - 48px);
+  padding: 20px;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #f1f5f9;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  z-index: 2147483645;
+  font-size: 14px;
+  display: none;
+}
+
+#bs-meter-panel.visible {
+  display: block;
+}
+
+#bs-meter-panel h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.bs-meter-score {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 8px 0 12px 0;
+  line-height: 1;
+}
+
+.bs-meter-score.low {
+  color: #10b981;
+}
+
+.bs-meter-score.medium {
+  color: #f59e0b;
+}
+
+.bs-meter-score.high {
+  color: #eb4034;
+}
+
+.bs-meter-detail {
+  margin: 8px 0;
+  padding: 8px 0;
+  border-top: 1px solid #334155;
+  color: #94a3b8;
+}
+
+#bs-meter-lens-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #1e293b;
+  color: #10b981;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#bs-meter-lens-btn:hover {
+  background: #334155;
+}
+
+.bs-meter-limit-msg {
+  color: #f59e0b;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.bs-meter-cta {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(235, 64, 52, 0.15);
+  border: 1px solid #eb4034;
+  color: #eb4034;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bs-meter-cta a {
+  color: #eb4034;
+  text-decoration: none;
+}
+
+.bs-meter-cta a:hover {
+  text-decoration: underline;
+}
