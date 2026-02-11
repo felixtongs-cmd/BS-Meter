@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #eb4034;
+  --safe: #10b981;
+  --dark: #0f172a;
+}
+
+body {
+  @apply bg-[#0f172a] text-slate-100 antialiased;
+}
